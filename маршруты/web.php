@@ -16,7 +16,7 @@ use App\Http\Controllers\ZohoController;
 */
 
 // Listing contact route
-Route::get('contacts', [ContactController::class, 'index'])->name('contacts');
+Route::get('/', [ContactController::class, 'index'])->name('contacts');
 
 // Add contact in ZOHO
 Route::get('zohocrmauth', [ZohoController::class, 'auth'])->name('zohocrmauth');
